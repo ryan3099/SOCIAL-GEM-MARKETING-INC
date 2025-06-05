@@ -8,7 +8,7 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #ffe6f0;
+      background-color: #fff0f5;
       color: #333;
     }
     header {
@@ -17,6 +17,13 @@
       padding: 20px;
       text-align: center;
     }
+    .intro {
+      padding: 40px 20px;
+      background-color: #ffe6f0;
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.8em;
+    }
     .grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -24,39 +31,22 @@
       padding: 40px;
     }
     .box {
-      position: relative;
       color: white;
-      height: 300px;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 60px 20px;
+      text-align: center;
       background-size: cover;
       background-position: center;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
       border-radius: 10px;
-      overflow: hidden;
-      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+      box-shadow: 0 0 10px rgba(255, 182, 193, 0.3);
     }
-    .box::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(255, 153, 204, 0.4);
-      z-index: 0;
-    }
-    .box-content {
-      position: relative;
-      z-index: 1;
-    }
-    .box h3 {
-      margin: 0 0 10px 0;
-      font-size: 20px;
-    }
-    .box p {
-      margin: 0;
-      font-size: 14px;
-      line-height: 1.5;
-    }
+    .box1 { background-image: url('https://images.unsplash.com/photo-1581092580498-c01d3f63ed61?fit=crop&w=800&q=80'); }
+    .box2 { background-image: url('https://images.unsplash.com/photo-1581092782063-3e09b22c1a42?fit=crop&w=800&q=80'); }
+    .box3 { background-image: url('https://images.unsplash.com/photo-1521336575822-6da63c09b1f1?fit=crop&w=800&q=80'); }
+    .box4 { background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?fit=crop&w=800&q=80'); }
+    .box5 { background-image: url('https://images.unsplash.com/photo-1549921296-3a4d8f4c2123?fit=crop&w=800&q=80'); }
+    .box6 { background-image: url('https://images.unsplash.com/photo-1573166364524-3456f0926b96?fit=crop&w=800&q=80'); }
     .contact {
       background-color: #ffd6e8;
       padding: 30px;
@@ -69,6 +59,10 @@
       padding: 15px;
       font-size: 14px;
     }
+    a {
+      color: #cc3366;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
@@ -77,48 +71,22 @@
   <h1>SOCIAL GEM MARKETING INC</h1>
 </header>
 
+<section class="intro">
+  SOCIAL GEM MARKETING INC is a dynamic firm based in California, offering strategic marketing, business consulting, and digital transformation services.  
+  We specialize in guiding startups and enterprises through evolving markets.  
+  Our team combines experience with innovation to deliver outstanding client results.  
+  From finance to fashion, we tailor our approach to each industry’s needs.  
+  Trust, efficiency, and creativity are at the core of everything we do.  
+  Partner with us to unlock your brand’s full potential.
+</section>
+
 <section class="grid">
-  <div class="box" style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?fit=crop&w=800&q=80');">
-    <div class="box-content">
-      <h3>FINANCIAL SERVICES</h3>
-      <p>We assist investment firms, RIAs, and financial professionals with marketing strategies, digital tools, and brand elevation. Our expertise ensures strong compliance and impactful results. We guide financial growth through modern storytelling and trusted messaging. Whether launching a fund or managing client relations, our approach brings clarity and engagement.</p>
-    </div>
-  </div>
-
-  <div class="box" style="background-image: url('https://images.unsplash.com/photo-1581090700227-1e8e5f26d4d0?fit=crop&w=800&q=80');">
-    <div class="box-content">
-      <h3>MANUFACTURING</h3>
-      <p>We help manufacturing businesses transform their outreach, streamline supply chain communication, and highlight innovation. Our marketing blends industrial power with digital finesse. From product showcases to brand positioning, we craft compelling content that resonates. Let your factory's excellence be seen and heard in global markets.</p>
-    </div>
-  </div>
-
-  <div class="box" style="background-image: url('https://images.unsplash.com/photo-1521337581100-8ca9a73a5f8c?fit=crop&w=800&q=80');">
-    <div class="box-content">
-      <h3>FASHION</h3>
-      <p>Style is communication, and we help fashion brands speak boldly. From runway to retail, our strategies align image with impact. We create visual campaigns, manage influencers, and tell your brand story with elegance. Whether you're launching a line or scaling globally, our team delivers trend-conscious marketing that sells.</p>
-    </div>
-  </div>
-
-  <div class="box" style="background-image: url('https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?fit=crop&w=800&q=80');">
-    <div class="box-content">
-      <h3>AUTO PARTS</h3>
-      <p>For suppliers, dealers, and aftermarket brands, we bring horsepower to your marketing. Our services include catalog optimization, SEO, and B2B strategies. Whether online or at trade shows, we position your brand to win. Clear messaging and data-driven growth make your parts stand out in a competitive market.</p>
-    </div>
-  </div>
-
-  <div class="box" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?fit=crop&w=800&q=80');">
-    <div class="box-content">
-      <h3>TECHNOLOGY / E-COMMERCE</h3>
-      <p>We build visibility and credibility for tech startups, SaaS products, and online retailers. From website audits to ad campaigns, we cover the full funnel. Our agile marketing adapts to fast-paced changes, bringing in traffic, users, and sales. Let’s grow your digital footprint with creative precision.</p>
-    </div>
-  </div>
-
-  <div class="box" style="background-image: url('https://images.unsplash.com/photo-1509395176047-4a66953fd231?fit=crop&w=800&q=80');">
-    <div class="box-content">
-      <h3>ENERGY</h3>
-      <p>We energize your communication. Whether you're in solar, oil & gas, or renewables, we help explain complex topics with simple clarity. Our campaigns promote safety, innovation, and responsibility. From investor decks to social media storytelling — we keep your energy brand powered and professional.</p>
-    </div>
-  </div>
+  <div class="box box1">FINANCIAL SERVICES</div>
+  <div class="box box2">MANUFACTURING</div>
+  <div class="box box3">FASHION</div>
+  <div class="box box4">AUTO PARTS</div>
+  <div class="box box5">TECHNOLOGY / E-COMMERCE</div>
+  <div class="box box6">ENERGY</div>
 </section>
 
 <section class="contact">
