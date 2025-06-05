@@ -8,7 +8,7 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #ffe6f0;
+      background-color: #fff0f5;
       color: #333;
     }
     header {
@@ -17,6 +17,13 @@
       padding: 20px;
       text-align: center;
     }
+    .intro {
+      padding: 40px 20px;
+      background-color: #ffe6f0;
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.8em;
+    }
     .grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -24,30 +31,22 @@
       padding: 40px;
     }
     .box {
-      position: relative;
       color: white;
-      height: 200px;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 60px 20px;
+      text-align: center;
       background-size: cover;
       background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      font-size: 20px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
       border-radius: 10px;
-      overflow: hidden;
+      box-shadow: 0 0 10px rgba(255, 182, 193, 0.3);
     }
-    .box::after {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(255, 153, 204, 0.35);
-    }
-    .box span {
-      position: relative;
-      z-index: 1;
-    }
+    .box1 { background-image: url('https://images.unsplash.com/photo-1581092580498-c01d3f63ed61?fit=crop&w=800&q=80'); }
+    .box2 { background-image: url('https://images.unsplash.com/photo-1581092782063-3e09b22c1a42?fit=crop&w=800&q=80'); }
+    .box3 { background-image: url('https://images.unsplash.com/photo-1521336575822-6da63c09b1f1?fit=crop&w=800&q=80'); }
+    .box4 { background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?fit=crop&w=800&q=80'); }
+    .box5 { background-image: url('https://images.unsplash.com/photo-1549921296-3a4d8f4c2123?fit=crop&w=800&q=80'); }
+    .box6 { background-image: url('https://images.unsplash.com/photo-1573166364524-3456f0926b96?fit=crop&w=800&q=80'); }
     .contact {
       background-color: #ffd6e8;
       padding: 30px;
@@ -60,6 +59,10 @@
       padding: 15px;
       font-size: 14px;
     }
+    a {
+      color: #cc3366;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
@@ -68,25 +71,22 @@
   <h1>SOCIAL GEM MARKETING INC</h1>
 </header>
 
+<section class="intro">
+  SOCIAL GEM MARKETING INC is a dynamic firm based in California, offering strategic marketing, business consulting, and digital transformation services.  
+  We specialize in guiding startups and enterprises through evolving markets.  
+  Our team combines experience with innovation to deliver outstanding client results.  
+  From finance to fashion, we tailor our approach to each industry’s needs.  
+  Trust, efficiency, and creativity are at the core of everything we do.  
+  Partner with us to unlock your brand’s full potential.
+</section>
+
 <section class="grid">
-  <div class="box" style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?fit=crop&w=800&q=80');">
-    <span>FINANCIAL SERVICES</span>
-  </div>
-  <div class="box" style="background-image: url('https://images.unsplash.com/photo-1581090700227-1e8e5f26d4d0?fit=crop&w=800&q=80');">
-    <span>MANUFACTURING</span>
-  </div>
-  <div class="box" style="background-image: url('https://images.unsplash.com/photo-1521337581100-8ca9a73a5f8c?fit=crop&w=800&q=80');">
-    <span>FASHION</span>
-  </div>
-  <div class="box" style="background-image: url('https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?fit=crop&w=800&q=80');">
-    <span>AUTO PARTS</span>
-  </div>
-  <div class="box" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?fit=crop&w=800&q=80');">
-    <span>TECHNOLOGY / E-COMMERCE</span>
-  </div>
-  <div class="box" style="background-image: url('https://images.unsplash.com/photo-1509395176047-4a66953fd231?fit=crop&w=800&q=80');">
-    <span>ENERGY</span>
-  </div>
+  <div class="box box1">FINANCIAL SERVICES</div>
+  <div class="box box2">MANUFACTURING</div>
+  <div class="box box3">FASHION</div>
+  <div class="box box4">AUTO PARTS</div>
+  <div class="box box5">TECHNOLOGY / E-COMMERCE</div>
+  <div class="box box6">ENERGY</div>
 </section>
 
 <section class="contact">
