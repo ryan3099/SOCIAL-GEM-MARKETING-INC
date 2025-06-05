@@ -8,7 +8,7 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #fff0f5;
+      background-color: #ffe6f0;
       color: #333;
     }
     header {
@@ -17,13 +17,6 @@
       padding: 20px;
       text-align: center;
     }
-    .intro {
-      padding: 40px 20px;
-      background-color: #ffe6f0;
-      text-align: center;
-      font-size: 18px;
-      line-height: 1.8em;
-    }
     .grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -31,22 +24,39 @@
       padding: 40px;
     }
     .box {
+      position: relative;
       color: white;
-      font-weight: bold;
-      font-size: 18px;
-      padding: 60px 20px;
-      text-align: center;
+      height: 300px;
       background-size: cover;
       background-position: center;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(255, 182, 193, 0.3);
+      overflow: hidden;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
     }
-    .box1 { background-image: url('https://images.unsplash.com/photo-1581092580498-c01d3f63ed61?fit=crop&w=800&q=80'); }
-    .box2 { background-image: url('https://images.unsplash.com/photo-1581092782063-3e09b22c1a42?fit=crop&w=800&q=80'); }
-    .box3 { background-image: url('https://images.unsplash.com/photo-1521336575822-6da63c09b1f1?fit=crop&w=800&q=80'); }
-    .box4 { background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?fit=crop&w=800&q=80'); }
-    .box5 { background-image: url('https://images.unsplash.com/photo-1549921296-3a4d8f4c2123?fit=crop&w=800&q=80'); }
-    .box6 { background-image: url('https://images.unsplash.com/photo-1573166364524-3456f0926b96?fit=crop&w=800&q=80'); }
+    .box::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(255, 153, 204, 0.4);
+      z-index: 0;
+    }
+    .box-content {
+      position: relative;
+      z-index: 1;
+    }
+    .box h3 {
+      margin: 0 0 10px 0;
+      font-size: 20px;
+    }
+    .box p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.5;
+    }
     .contact {
       background-color: #ffd6e8;
       padding: 30px;
@@ -59,10 +69,6 @@
       padding: 15px;
       font-size: 14px;
     }
-    a {
-      color: #cc3366;
-      text-decoration: none;
-    }
   </style>
 </head>
 <body>
@@ -71,22 +77,48 @@
   <h1>SOCIAL GEM MARKETING INC</h1>
 </header>
 
-<section class="intro">
-  SOCIAL GEM MARKETING INC is a dynamic firm based in California, offering strategic marketing, business consulting, and digital transformation services.  
-  We specialize in guiding startups and enterprises through evolving markets.  
-  Our team combines experience with innovation to deliver outstanding client results.  
-  From finance to fashion, we tailor our approach to each industry’s needs.  
-  Trust, efficiency, and creativity are at the core of everything we do.  
-  Partner with us to unlock your brand’s full potential.
-</section>
-
 <section class="grid">
-  <div class="box box1">FINANCIAL SERVICES</div>
-  <div class="box box2">MANUFACTURING</div>
-  <div class="box box3">FASHION</div>
-  <div class="box box4">AUTO PARTS</div>
-  <div class="box box5">TECHNOLOGY / E-COMMERCE</div>
-  <div class="box box6">ENERGY</div>
+  <div class="box" style="background-image: url('https://images.unsplash.com/photo-1493612276216-ee3925520721?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+    <div class="box-content">
+      <h3>Strategy Consulting</h3>
+      <p>We provide in-depth strategic analysis and guidance for businesses looking to grow, transform, or enter new markets. Our experts analyze market conditions, competitor activity, and internal performance to craft tailored strategies that drive success and long-term value.</p>
+    </div>
+  </div>
+
+  <div class="box" style="background-image: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+    <div class="box-content">
+      <h3>Team Empowerment</h3>
+      <p>Through workshops, coaching, and leadership programs, we empower your internal teams with the tools they need to lead confidently. From communication skills to productivity frameworks, we unlock the potential of your workforce for collective advancement.</p>
+    </div>
+  </div>
+
+  <div class="box" style="background-image: url('https://images.unsplash.com/photo-1557838923-2985c318be48?q=80&w=2531&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+    <div class="box-content">
+      <h3>Digital Solutions</h3>
+      <p>We design and implement digital solutions tailored to your needs, including e-commerce, CRM systems, and data integration platforms. Our approach balances user-friendly interfaces with powerful backend infrastructure to optimize efficiency and user satisfaction.</p>
+    </div>
+  </div>
+
+  <div class="box" style="background-image: url('https://images.unsplash.com/photo-1503551723145-6c040742065b-v2?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+    <div class="box-content">
+      <h3>Creative Marketing</h3>
+      <p>We craft bold marketing campaigns that captivate audiences and deliver results. From brand identity to multimedia production and online advertising, our team builds a cohesive presence across all platforms to enhance visibility and engagement.</p>
+    </div>
+  </div>
+
+  <div class="box" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2672&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+    <div class="box-content">
+      <h3>Product Innovation</h3>
+      <p>Whether launching a new line or reinventing an old one, we guide your product development lifecycle. We combine market insights with user research to create offerings that are both desirable and commercially viable, ensuring standout success.</p>
+    </div>
+  </div>
+
+  <div class="box" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?fit=crop&w=800&q=80');">
+    <div class="box-content">
+      <h3>Global Outreach</h3>
+      <p>Expand your brand internationally with our support. We manage localization, multilingual marketing, and region-specific strategies to make your company a recognized and trusted name in key markets across the globe.</p>
+    </div>
+  </div>
 </section>
 
 <section class="contact">
