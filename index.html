@@ -26,27 +26,36 @@
     .box {
       position: relative;
       color: white;
-      height: 200px;
+      height: 300px;
       background-size: cover;
       background-position: center;
+      padding: 20px;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      font-size: 20px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      flex-direction: column;
+      justify-content: flex-end;
       border-radius: 10px;
       overflow: hidden;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
     }
-    .box::after {
+    .box::before {
       content: '';
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(255, 153, 204, 0.35);
+      background: rgba(255, 153, 204, 0.4);
+      z-index: 0;
     }
-    .box span {
+    .box-content {
       position: relative;
       z-index: 1;
+    }
+    .box h3 {
+      margin: 0 0 10px 0;
+      font-size: 20px;
+    }
+    .box p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.5;
     }
     .contact {
       background-color: #ffd6e8;
@@ -70,22 +79,45 @@
 
 <section class="grid">
   <div class="box" style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?fit=crop&w=800&q=80');">
-    <span>FINANCIAL SERVICES</span>
+    <div class="box-content">
+      <h3>FINANCIAL SERVICES</h3>
+      <p>We assist investment firms, RIAs, and financial professionals with marketing strategies, digital tools, and brand elevation. Our expertise ensures strong compliance and impactful results. We guide financial growth through modern storytelling and trusted messaging. Whether launching a fund or managing client relations, our approach brings clarity and engagement.</p>
+    </div>
   </div>
+
   <div class="box" style="background-image: url('https://images.unsplash.com/photo-1581090700227-1e8e5f26d4d0?fit=crop&w=800&q=80');">
-    <span>MANUFACTURING</span>
+    <div class="box-content">
+      <h3>MANUFACTURING</h3>
+      <p>We help manufacturing businesses transform their outreach, streamline supply chain communication, and highlight innovation. Our marketing blends industrial power with digital finesse. From product showcases to brand positioning, we craft compelling content that resonates. Let your factory's excellence be seen and heard in global markets.</p>
+    </div>
   </div>
+
   <div class="box" style="background-image: url('https://images.unsplash.com/photo-1521337581100-8ca9a73a5f8c?fit=crop&w=800&q=80');">
-    <span>FASHION</span>
+    <div class="box-content">
+      <h3>FASHION</h3>
+      <p>Style is communication, and we help fashion brands speak boldly. From runway to retail, our strategies align image with impact. We create visual campaigns, manage influencers, and tell your brand story with elegance. Whether you're launching a line or scaling globally, our team delivers trend-conscious marketing that sells.</p>
+    </div>
   </div>
+
   <div class="box" style="background-image: url('https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?fit=crop&w=800&q=80');">
-    <span>AUTO PARTS</span>
+    <div class="box-content">
+      <h3>AUTO PARTS</h3>
+      <p>For suppliers, dealers, and aftermarket brands, we bring horsepower to your marketing. Our services include catalog optimization, SEO, and B2B strategies. Whether online or at trade shows, we position your brand to win. Clear messaging and data-driven growth make your parts stand out in a competitive market.</p>
+    </div>
   </div>
+
   <div class="box" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?fit=crop&w=800&q=80');">
-    <span>TECHNOLOGY / E-COMMERCE</span>
+    <div class="box-content">
+      <h3>TECHNOLOGY / E-COMMERCE</h3>
+      <p>We build visibility and credibility for tech startups, SaaS products, and online retailers. From website audits to ad campaigns, we cover the full funnel. Our agile marketing adapts to fast-paced changes, bringing in traffic, users, and sales. Let’s grow your digital footprint with creative precision.</p>
+    </div>
   </div>
+
   <div class="box" style="background-image: url('https://images.unsplash.com/photo-1509395176047-4a66953fd231?fit=crop&w=800&q=80');">
-    <span>ENERGY</span>
+    <div class="box-content">
+      <h3>ENERGY</h3>
+      <p>We energize your communication. Whether you're in solar, oil & gas, or renewables, we help explain complex topics with simple clarity. Our campaigns promote safety, innovation, and responsibility. From investor decks to social media storytelling — we keep your energy brand powered and professional.</p>
+    </div>
   </div>
 </section>
 
